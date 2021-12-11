@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head> 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Imam_Muhammad_Ibn_Saud_Islamic_University.svg.jpg"
+   width="70" height="70" />
+     <h1> Food Text <br> Classification </h1>
+
+<meta charset="UTF-8">
+<title>Your front-end</title>
+</head>
+
+<body>
+  <style>
+    body {text-align: center;}
+  </style>
+<form action="/fasttext">
+  
+ <input type="text" name="statement" size="30">
+	<br><br>
+	
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 
+	<button onclick="text()"> Submit </button> 
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="Clear Text">
+
+ <script>
+   function getFastTextResults(statement) {
+	
+	FastText.predict(
+		"model.bin", 3,
+		[statement],
+		function (success, error) {
+
+		  if(error) {
+			console.log(error)
+			return;
+		  }
+		  console.log(success)
+		})
+	return "success!";
+}
+ </script>
+	
+</form>
+</body>
+</html> 
