@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
