@@ -5,5 +5,5 @@ node_js:
   - node
 
 script:
- - npm run text
+ - npm run test
 
