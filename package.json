@@ -2,8 +2,8 @@
   "name": "sw",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-  "test": "mocha"
+"scripts": {
+  "test": "echo \"No test specified\""
 },
   "keywords": [],
   "author": "",
