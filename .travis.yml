@@ -1,14 +1,4 @@
-sudo: false 
+language: java 
 
-language: node_js
-
-node-js:
-  - node 
-
-script:
-  - npm run lint
-  - npm run test:coveralls
-
-nofications:
-  email: false
-  
+jdk: 
+- oraclejdk8
