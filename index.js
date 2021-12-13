@@ -36,9 +36,9 @@ function getFastTextResults(statement) {
 	FastText.predict(
 		"model.bin", 3,
 		[statement],
-		var Result=null;
+		
 		function (success, error) {
-
+                 var Result=null;
 		  if(error) {
 			console.log(error)
 			return;
