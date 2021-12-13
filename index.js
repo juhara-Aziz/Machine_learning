@@ -36,15 +36,16 @@ function getFastTextResults(statement) {
 	FastText.predict(
 		"model.bin", 3,
 		[statement],
+		var Result=null;
 		function (success, error) {
 
 		  if(error) {
 			console.log(error)
 			return;
 		  }
-		  console.log(success)
+		  Result=success
 		})
-	return "success!";
+	return "Result";
 }
 
 app.listen(8000, () => {
