@@ -44,7 +44,7 @@ function getFastTextResults(statement) {
          }
          console.log(success)
        })
-   return "success!";
+   return success;
 }
 
 app.listen(8000, () => {
