@@ -42,9 +42,10 @@ function getFastTextResults(statement) {
            console.log(error)
            return;
          }
+         s=success
          console.log(success)
        })
-   return success;
+   return s;
 }
 
 app.listen(8000, () => {
